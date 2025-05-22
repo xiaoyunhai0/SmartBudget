@@ -1,5 +1,3 @@
----
-
 # 📱 SmartBudget – 安卓记账助手
 
 > 一个基于 Android Studio 和 Java 开发的本地记账 App，支持账单管理、图表统计、预算设置与分类维护。
