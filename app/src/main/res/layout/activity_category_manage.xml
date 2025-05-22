@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F7FB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="类别管理"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#2186F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="22dp"/>
+
+        <!-- 输入新类别和添加按钮 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etNewCategory"
+                android:hint="请输入新类别名称"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:paddingLeft="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="添加类别"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:cornerRadius="16dp"
+                android:backgroundTint="#2186F5"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="所有类别"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="493dp"
+            android:background="@drawable/bg_card_light"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ListView
+                android:id="@+id/listCategory"
+                android:layout_width="match_parent"
+                android:layout_height="473dp"
+                android:divider="#ECECEC"
+                android:dividerHeight="1dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

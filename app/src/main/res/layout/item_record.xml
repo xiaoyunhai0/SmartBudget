@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_light"
+    android:layout_marginBottom="10dp"
+    android:elevation="2dp">
+
+    <!-- 顶部行：类型（加icon可选）、金额、删除按钮 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <!-- 类型（可加左icon） -->
+        <TextView
+            android:id="@+id/tvType"
+            android:text="类型"
+            android:textStyle="bold"
+            android:textColor="#2186F5"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <!-- 金额 -->
+        <TextView
+            android:id="@+id/tvAmount"
+            android:text="金额"
+            android:textColor="#FF6F00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- 删除按钮小巧风格 -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:background="@drawable/rounded_btn_red"
+            android:backgroundTint="#FF5B5B"
+            android:minWidth="48dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="删除"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <!-- 备注 -->
+    <TextView
+        android:id="@+id/tvNote"
+        android:text="备注"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"/>
+
+    <!-- 日期 -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:text="日期"
+        android:textSize="13sp"
+        android:textColor="#AAAAAA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"/>
+</LinearLayout>
